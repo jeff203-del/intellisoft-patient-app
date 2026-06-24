@@ -9,8 +9,13 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 5000;
 
+// CORS - Allows local dev AND your deployed Vercel frontend
+app.use(cors({
+    origin: ['http://localhost:3000', 'https://intellisoft-patient-app.vercel.app'],
+    credentials: true
+}));
+
 // Middleware
-app.use(cors());
 app.use(express.json());
 
 // Routes
@@ -33,7 +38,6 @@ mongoose.connect(MONGODB_URI)
     })
     .catch((err) => {
         console.error('❌ MongoDB connection error:', err);
-        // Start server anyway for demo mode if DB fails
         app.listen(PORT, () => {
             console.log(`🚀 Server running on port ${PORT} (WITHOUT DATABASE)`);
         });
