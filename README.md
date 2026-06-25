@@ -51,3 +51,6 @@ All backend endpoints are custom-built to support the requirements.
 - Node.js 18+
 - MongoDB (local or MongoDB Atlas)
 
+## Contact Information
+
+For any inquiries, please feel free to contact the project maintainer.[jeffmutembei203@gmail.com]
