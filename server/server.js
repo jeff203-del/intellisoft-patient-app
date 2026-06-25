@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 5000;
 
 // CORS - Allows local dev AND your deployed Vercel frontend
 app.use(cors({
-    origin: ['http://localhost:3000', 'https://intellisoft-patient-app.vercel.app'],
+    origin: ['http://localhost:3000', 'https://intellisoft-patient-app.vercel.app', 'https://intellisoft-patient-app-git-main-jeff203-del.vercel.app'],
     credentials: true
 }));
 

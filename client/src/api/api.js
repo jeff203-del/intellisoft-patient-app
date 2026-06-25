@@ -11,19 +11,10 @@ const api = axios.create({
 });
 
 export const patientApi = {
-    // Register patient
     register: (data) => api.post('/patients', data),
-
-    // Get all patients
     getAll: (visitDate) => api.get('/patients', { params: { visitDate } }),
-
-    // Get single patient
     getById: (id) => api.get(`/patients/${id}`),
-
-    // Add vitals
     addVitals: (id, data) => api.post(`/patients/${id}/vitals`, data),
-
-    // Add assessment
     addAssessment: (id, data) => api.post(`/patients/${id}/assessments`, data)
 };
 
