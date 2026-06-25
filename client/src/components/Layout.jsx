@@ -54,10 +54,11 @@ const Layout = ({ children }) => {
         {children}
       </main>
 
-      {/* Footer */}
+            {/* Footer */}
       <footer className="bg-white border-t border-gray-100 mt-auto">
-        <div className="max-w-6xl mx-auto px-4 py-6 text-center text-sm text-gray-500">
-          © 2026 IntelliSOFT — Health IT Systems for Africa
+        <div className="max-w-6xl mx-auto px-4 py-6 text-center">
+          <p className="text-sm text-gray-500">© 2026 IntelliSOFT — Health IT Systems for Africa</p>
+          <p className="text-sm text-gray-400 mt-1">Made with 💚 by Jeff</p>
         </div>
       </footer>
     </div>
