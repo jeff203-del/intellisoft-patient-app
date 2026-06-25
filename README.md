@@ -51,8 +51,3 @@ All backend endpoints are custom-built to support the requirements.
 - Node.js 18+
 - MongoDB (local or MongoDB Atlas)
 
-### 1. Clone & Install
-
-```bash
-git clone &lt;repo-url&gt;
-cd intellisoft-patient-app
